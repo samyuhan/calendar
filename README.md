@@ -5,6 +5,6 @@ For this homework assignment, I had to create a daily planner that has the featu
 For this assignment, I coded in HTML/CSS and Javascript, using Bootstrap and JQuery.
 
 ## Application Functioning
-![Demo Walkthrough]("/demo.gif")
+![Demo Walkthrough](demo.gif)
 
 The final planner site can be found here: [Daily Planner](https://samyuhan.github.io/calendar/)

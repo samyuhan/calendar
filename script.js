@@ -25,3 +25,7 @@ function colorBlock(){
         }
     }
 }
+
+//Save button click listener
+$(".saveBtn").on("click", saveClick);
+

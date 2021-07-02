@@ -33,4 +33,6 @@ $(".saveBtn").on("click", saveClick);
 function saveClick(event){
     var hour = $(event.target).parent().attr("id");
     var text = $(event.target).siblings(".description").val();
+    
+    localStorage.setItem(hour, text);
 }

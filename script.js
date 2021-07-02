@@ -5,6 +5,17 @@ $("#currentDay").append(currentDay);
 // Call colorBlock function
 colorBlock();
 
+// Get data from local storage for each hour
+$('#9AM .description').val(localStorage.getItem('9AM'));
+$('#10AM .description').val(localStorage.getItem('10AM'));
+$('#11AM .description').val(localStorage.getItem('11AM'));
+$('#12PM .description').val(localStorage.getItem('12PM'));
+$('#1PM .description').val(localStorage.getItem('1PM'));
+$('#2PM .description').val(localStorage.getItem('2PM'));
+$('#3PM .description').val(localStorage.getItem('3PM'));
+$('#4PM .description').val(localStorage.getItem('4PM'));
+$('#5PM .description').val(localStorage.getItem('5PM'));
+
 // Create function to coordinate colors for past, present, future
 function colorBlock(){
     var timeBlock = $(".time-block");

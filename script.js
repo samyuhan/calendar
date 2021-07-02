@@ -26,6 +26,11 @@ function colorBlock(){
     }
 }
 
-//Save button click listener
+// Save button
 $(".saveBtn").on("click", saveClick);
 
+// Create function to save data to local storage
+function saveClick(event){
+    var hour = $(event.target).parent().attr("id");
+    var text = $(event.target).siblings(".description").val();
+}

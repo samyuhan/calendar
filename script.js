@@ -2,26 +2,23 @@
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").append(currentDay);
 
-// Create currentTime variable to coordinate colors for past, present, future
-var currentTime = moment();
+// Call colorBlock function
 colorBlock();
 
-// Coordinate colors with this function
+// Create function to coordinate colors for past, present, future
 function colorBlock(){
     var timeBlock = $(".time-block");
-    var currentHr = currentTime.hours();
+    var currentTime = moment().hours();
     
-    for(var i = 0; i < timeBlock.length; i++){
+    for (var i = 0; i < timeBlock.length; i++){
         var block = timeBlock[i];
 
-        if(parseInt(block.id) < currentHr){
+        if (parseInt(block.id) < currentTime){
             $(block).addClass("past");
-        }
-        else if(parseInt(block.id) === currentHr){
+        } else if (parseInt(block.id) === currentTime){
             $(block).removeClass("past");
             $(block).addClass("present");
-        }
-        else{
+        } else {
             $(block).removeClass("past");
             $(block).removeClass("present");
             $(block).addClass("future");
